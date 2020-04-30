@@ -1,48 +1,31 @@
-# goMarketplace
+# GoMarketplace 🛍️
 
-<h1>
-<img src="src/assets/logo.png">
-</h1>
-<br />
+Este repositório é referente ao desafio 'Fundamentos do React Native' do Bootcamp GoStack 11.0, da Rocketseat 🚀.
 
+# Proposta
 
+Este projeto é um estudo dos conceitos de Contexto do React-Native, tendo como 'carro chefe' a Context API e seu hook (useContext).
+A ideia é simular uma loja fictícia, trazendo dados de uma Fake API e integrar as informações disponíveis em tela, tais como quantidade de produtos e preço final.
+O diferencial é o Tema Dark, que também foi construído utilizando a Context API do React.
 
-## 💬 Sobre
-Aplicação que simula um market place, baseada no desafio 08 do **Bootcamp GoStack 11**, com o intuito de fixar o conteúdo sobre <u>fundamentos de hooks</u> do React-Native.
+# Tecnologias Utilizadas
 
-## :hammer_and_wrench: Tecnologias principais utilizadas
-<ul>
-  <li>
-  react<br>
-  &emsp;&bull; version: 16.11.0
-  </li>
-  <li>
-  react-native<br>
-  &emsp;&bull; version: 0.62.2
-  </li>
-  <li>
-  axios<br>
-  &emsp;&bull; version: 0.19.2
-  </li>
-</ul>
+React ⚛️ <br />
+React Native ⚛️ <br />
+React Navigation ⚛️ <br />
+Styled-Components 💅🏻 <br />
+Typescript ⌨️
 
-## Como reproduzir
+# Utilização
 
-<ol>
-  <li>Realize o clone desse repositório;</li><br>
-  <li>No local em que foi clonado, execute o comanto <i><b>yarn</b></i> para a instalação de todas as dependências do projeto;</li><br>
-  <li>Para emular o servidor que retornará a lista de produtos disponíveis:
-    &emsp;
-    <ul>
-      <li>
-      Se estiver rodando em um dispositivo virtual:<br>
-      <b><i>json-server server.json -p 3333</i></b>
-      </li><br>
-      <li>
-      Agora, caso seja em um dispositivo físico ou em algum outro endereço da rede<br>
-      <b><i>json-server server.json -p 3333 -H 192.168.0.15</i></b>
-      </li>
-    </ul>
-  </li><br>
-  <li>Execute o comando <b><i>yarn android</i></b> para realizar a instalação da aplicação em seu dispositivo.</li>
-</ol>
+Para obter esse projeto, siga os passos:
+
+1. Clone esse repositório utilizando <code>git clone</code>.
+2. Rode o comando <code> yarn </code> na raíz da pasta do projeto clonado para baixar as dependências.
+3. Rode o comando <code> yarn android</code> (se estiver emulando em um android) ou <code>yarn ios</code> (se estiver emulando em um ios) na raíz da pasta do projeto clonado para instalar o app no emulador.
+4. Rode <code>json-server server.json -p 3333</code> na raíz da pasta do projeto para inicializar a Fake API.
+5. Rode <code> yarn start </code> na raíz da pasta do projeto para inicializar o Metro Bundler.
+6. Abra o projeto no seu emulador.
+7. Happy Hacking! 🚀
+
+⚠️ Caso o projeto não mostre os produtos, rode <code>adb reverse tcp:3333 tcp:3333</code> antes de iniciar a Fake API ⚠️
