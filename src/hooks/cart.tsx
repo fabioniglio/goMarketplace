@@ -53,7 +53,7 @@ const CartProvider: React.FC = ({ children }) => {
         setProducts(newProducts);
       }
       await AsyncStorage.setItem(
-        'GoMarket:products',
+        '@GoMarketPlace:products',
         JSON.stringify(newProducts),
       );
     },
@@ -72,12 +72,11 @@ const CartProvider: React.FC = ({ children }) => {
         }
 
         setProducts(updateProducts);
+        await AsyncStorage.setItem(
+          '@GoMarketPlace:products',
+          JSON.stringify(updateProducts),
+        );
       }
-
-      await AsyncStorage.setItem(
-        'GoMarket:products',
-        JSON.stringify(updateProducts),
-      );
     },
     [products],
   );
